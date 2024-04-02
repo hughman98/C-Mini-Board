@@ -59,9 +59,9 @@ void expand_users(User** users, int size){
 // This may require updating the functions arguments.
 int add_user(UserArray arr, char* name, char* password){
     if (check_reqs(password)){
-        if (arr.length == arr->max_length){
+        if (arr.length == arr.max_length){
             arr.max_length += 1;
-            expand_users(&arr->users, arr->max_length);
+            expand_users(&arr.users, arr.max_length);
         }
         arr.users[arr.length].username = calloc(20, 1);
         strcpy(arr.users[arr.length].username, name);
