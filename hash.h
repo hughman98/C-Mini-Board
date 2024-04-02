@@ -25,10 +25,9 @@ void expand_users(User** users, int size);
 
 bool check_reqs_fixed_size(char* pass); 
 
-
 int add_user(UserArray arr, char* name, char* password);
 
-char * hash_function(char* password, int salt); 
+char* hash_function(char* password, int salt); 
 
 bool check_pass(UserArray* arr, char* username, char* password); 
 
